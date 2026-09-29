@@ -1,0 +1,25 @@
+name: Deploy to Railway
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    container:
+      image: ghcr.io/railwayapp/cli:latest
+
+    env:
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      SERVICE_ID: cc10d6c7-9837-430f-bb5d-3c2225f2d510
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Deploy to Railway
+        run: railway up --service "$SERVICE_ID" --ci

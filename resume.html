@@ -4,17 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Connor Watson | Resume</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body class="resume-page">
+    <main class="resume">
 
-    <a href="./index.html">Back to Home</a>
+        <header class="resume-header">
+            <h1>Connor Watson</h1>
+            <p class="resume-title">Engineer</p>
 
-    <iframe src="./assets/resume.pdf" title="Resume">
-    </iframe>
+            <div class="contact-info">
+                <span>Houston, TX</span>
+                <a href="tel:+12818402956">(281) 840-2956</a>
+                <a href="mailto:connorwatson002@icloud.com">
+                    connorwatson002@icloud.com
+                </a>
+                <a href="https://github.com/MrBushido-002" target="_blank">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/connor-watson-47013b207" target="_blank">
+                    LinkedIn
+                </a>
+            </div>
+        </header>
 
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                A Physical Design Engineer pivoting to software engineering.
+                Graduated with a degree in mathematics and physics, however was
+                highly impacted by programming classes in college because it
+                scratches the problem-solving itch along with a lifelong interest
+                in computers and electronics. While primarily focused on software
+                engineering positions, an excellent addition to any engineering
+                team with the ability to understand complex problems and work with
+                a team across different levels of abstraction.
+            </p>
+        </section>
+
+        <section>
+            <h2>Areas of Expertise</h2>
+
+            <div class="expertise-grid">
+                <span>Problem Solving</span>
+                <span>Strategic Planning</span>
+                <span>Technical Writing</span>
+                <span>Cross-functional Collaboration</span>
+                <span>Data Analysis</span>
+                <span>Critical Thinking</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <p>
+                Python, C, Go, SQL, Docker, Version Control (Git), REST APIs,
+                CAD, Autodesk Inventor, Fusion 360, SEM (Helios G4 DFIB),
+                LVS/DRC verification, circuit layout, Synopsys, and machine shop
+                manufacturing.
+            </p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+
+            <article class="resume-item">
+                <div class="item-heading">
+                    <h3>Physical Design Engineer</h3>
+                    <span>Nanya Technology</span>
+                </div>
+
+                <ul>
+                    <li>
+                        Executed physical design by transforming symbolic schematic
+                        descriptions into optimized physical layouts.
+                    </li>
+                    <li>
+                        Performed Layout Versus Schematic (LVS) and Design Rule
+                        Check (DRC) verification to ensure design integrity and
+                        increase the percentage yield of viable chips per batch.
+                    </li>
+                    <li>
+                        Resolved micro-scale layout challenges while maintaining
+                        focus on macro-level project objectives and long-term
+                        design goals through the full life cycle of three
+                        market-ready chips.
+                    </li>
+                </ul>
+            </article>
+
+            <article class="resume-item">
+                <div class="item-heading">
+                    <h3>Failure Analysis Engineer Intern</h3>
+                    <span>Coherent Corp</span>
+                </div>
+
+                <ul>
+                    <li>
+                        Operated a Helios G4 DFIB scanning electron microscope
+                        (SEM) for semiconductor failure analysis and defect
+                        diagnosis.
+                    </li>
+                    <li>
+                        Designed, assembled, and tested a thermal microscope system
+                        for integration into a failure analysis diagnostic toolkit.
+                    </li>
+                    <li>
+                        Developed comprehensive operating procedures and safety
+                        protocols for thermal microscopy equipment.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+
+            <article class="resume-item">
+                <div class="item-heading">
+                    <h3>
+                        Bachelor of Arts in Mathematics and Engineering Physics
+                    </h3>
+                    <span>August 2018 – May 2022</span>
+                </div>
+
+                <p>
+                    Austin College
+                </p>
+
+                <p>
+                    Three-Year Academic All-American · NCAA Division III Water
+                    Polo Team Member
+                </p>
+            </article>
+
+            <article class="resume-item">
+                <div class="item-heading">
+                    <h3>Back-End Development Certification</h3>
+                    <span>April 2026</span>
+                </div>
+
+                <p>Boot.dev</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <article class="resume-item">
+                <h3>
+                    <a href="https://github.com/MrBushido-002/chess-in-golang" target="_blank">
+                        Terminal Chess with Golang
+                    </a>
+                </h3>
+
+                <p>
+                    A player-versus-player chess application for the terminal.
+                    A web server with a REST API stores game and player
+                    information in a SQL database. The application supports
+                    move verification, check and checkmate verification,
+                    En Passant, and replay viewing after games are completed.
+                </p>
+            </article>
+
+            <article class="resume-item">
+                <h3>Mechanical Focus Assist</h3>
+
+                <p>
+                    Designed and 3D printed a mechanical focus assist for the
+                    data-collecting camera at Austin College's Adams Observatory.
+                    Fine-tuning was performed based on design constraints and
+                    parameters.
+                </p>
+            </article>
+
+            <article class="resume-item">
+                <h3>HUNCH International Space Station Lockers</h3>
+
+                <p>
+                    Developed CAD models for the International Space Station
+                    locker system using Autodesk Inventor and historical
+                    engineering drawings.
+                </p>
+            </article>
+
+            <article class="resume-item">
+                <h3>
+                    <a href="https://github.com/MrBushido-002/Conways-game-of-life" target="_blank">
+                        Conway's Game of Life
+                    </a>
+                </h3>
+
+                <p>
+                    A simulation program built with Python and the Pygame
+                    library.
+                </p>
+            </article>
+        </section>
+
+        <footer class="resume-footer">
+            <a href="./index.html">Back to Home</a>
+        </footer>
+
+    </main>
 </body>
 
 </html>

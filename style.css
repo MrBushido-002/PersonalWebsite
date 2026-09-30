@@ -16,7 +16,9 @@ body {
 }
 
 .home-content {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -25,8 +27,7 @@ h1 {
     font-weight: normal;
 }
 
-.home-content a {
-    display: block;
+.home-content a, .home-content a:visited {
     margin-top: 20px;
     color: #fff;
     font-size: 1.25rem;

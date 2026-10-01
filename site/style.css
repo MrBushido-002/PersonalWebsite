@@ -12,7 +12,7 @@ body {
     align-items: center;
     background-color: #111;
     color: #fff;
-    font-family: Monospace, Lucida Console;
+    font-family: Monospace, Monaco;
 }
 
 .home-content {

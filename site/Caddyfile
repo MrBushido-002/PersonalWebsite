@@ -1,0 +1,16 @@
+:{$PORT:3000} {
+	root * site.
+	encode gzip
+
+	# The game folder gets the relaxed policy
+	handle /conways/* {
+		header Content-Security-Policy "default-src 'self'; img-src 'self' data: blob: https: *; style-src 'self' 'unsafe-inline' https: *; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' https: *; font-src 'self' data: https: *; connect-src 'self' https: *; media-src 'self' blob: https: *; object-src 'none'; frame-src 'self' https: *; worker-src 'self' blob:;"
+		file_server
+	}
+
+	# Everything else keeps the original policy
+	handle {
+		header Content-Security-Policy "default-src 'self'; img-src 'self' data: https: *; style-src 'self' 'unsafe-inline' https: *; script-src 'self' 'unsafe-inline' https: *; font-src 'self' data: https: *; connect-src 'self' https: *; media-src 'self' https: *; object-src 'none'; frame-src 'self' https: *;"
+		file_server
+	}
+}   

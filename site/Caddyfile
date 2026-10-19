@@ -1,5 +1,5 @@
 :{$PORT:3000} {
-	root * site.
+	root * .
 	encode gzip
 
 	# The game folder gets the relaxed policy

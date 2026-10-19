@@ -56,3 +56,47 @@ h2 {
 .resume a:hover {
     text-decoration: underline;
 }
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+
+.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.instructions {
+    flex: 1;
+    min-width: 0;
+}
+
+.game {
+    flex: 0 0 800px;
+    width: 800px;
+    height: 800px;
+    border: none;
+}
+
+kbd {
+    padding: 0.1em 0.4em;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+@media (max-width: 1100px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .game {
+        flex: none;
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+}
